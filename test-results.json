@@ -1,0 +1,472 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\playwright.config.ts",
+    "rootDir": "C:/Users/Eason/Documents/Workspace/angular-will/playwright-demo/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Eason/Documents/Workspace/angular-will/playwright-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Eason/Documents/Workspace/angular-will/playwright-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Eason/Documents/Workspace/angular-will/playwright-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Eason/Documents/Workspace/angular-will/playwright-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Eason/Documents/Workspace/angular-will/playwright-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Eason/Documents/Workspace/angular-will/playwright-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.41.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "藍鵲會館-四人房",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 23726,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,800' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,800' })\u001b[22m\n\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5",
+                    "location": {
+                      "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                      "column": 80,
+                      "line": 58
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                        "column": 80,
+                        "line": 58
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,800' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\u001b[22m\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-22T00:38:22.683Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\test-results\\example-藍鵲會館-四人房-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                    "column": 80,
+                    "line": 58
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-5fb64242dc7b78ec10a8",
+          "file": "example.spec.ts",
+          "line": 50,
+          "column": 7
+        },
+        {
+          "title": "檜意村小木屋-四人房",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 26079,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 5,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 5,800' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 5,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 5,800' })\u001b[22m\n\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5",
+                    "location": {
+                      "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                      "column": 80,
+                      "line": 58
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                        "column": 80,
+                        "line": 58
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 5,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 5,800' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\u001b[22m\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-22T00:38:22.446Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\test-results\\example-檜意村小木屋-四人房-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                    "column": 80,
+                    "line": 58
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-78aa6f14afad1712f9da",
+          "file": "example.spec.ts",
+          "line": 50,
+          "column": 7
+        },
+        {
+          "title": "移動城堡-露營車（2大2小）",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 24756,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 5,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 5,800' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 5,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 5,800' })\u001b[22m\n\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5",
+                    "location": {
+                      "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                      "column": 80,
+                      "line": 58
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                        "column": 80,
+                        "line": 58
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 5,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 5,800' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\u001b[22m\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-22T00:38:22.642Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\test-results\\example-移動城堡-露營車（2大2小）-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                    "column": 80,
+                    "line": 58
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-fb55fb9d7820f777ec78",
+          "file": "example.spec.ts",
+          "line": 50,
+          "column": 7
+        },
+        {
+          "title": "合掌村 ",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 24943,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,200' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,200' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,200' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,200' })\u001b[22m\n\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5",
+                    "location": {
+                      "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                      "column": 80,
+                      "line": 58
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                        "column": 80,
+                        "line": 58
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,200' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,200' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\u001b[22m\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-22T00:38:22.742Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\test-results\\example-合掌村--chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                    "column": 80,
+                    "line": 58
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-d71699ccf2d40e518e94",
+          "file": "example.spec.ts",
+          "line": 50,
+          "column": 7
+        },
+        {
+          "title": "星空城堡-露營車（四人房）",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 16339,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 6,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 6,800' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 6,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 6,800' })\u001b[22m\n\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5",
+                    "location": {
+                      "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                      "column": 80,
+                      "line": 58
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                        "column": 80,
+                        "line": 58
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 6,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 6,800' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\u001b[22m\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-22T00:38:49.088Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\test-results\\example-星空城堡-露營車（四人房）-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                    "column": 80,
+                    "line": 58
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-8d97d925e47ffa443f1d",
+          "file": "example.spec.ts",
+          "line": 50,
+          "column": 7
+        },
+        {
+          "title": "星光村",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "failed",
+                  "duration": 16386,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,800' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,800' })\u001b[22m\n\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\n    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5",
+                    "location": {
+                      "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                      "column": 80,
+                      "line": 58
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                        "column": 80,
+                        "line": 58
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('button', { name: '年4月27日 change_history 4,800' })\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: '年4月27日 change_history 4,800' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 56 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 57 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 58 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m testCase\u001b[33m.\u001b[39mdateAndPrice2 }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 59 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 60 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 61 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:58:80\u001b[22m\n\u001b[2m    at C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts:57:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-22T00:38:50.238Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\test-results\\example-星光村-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Eason\\Documents\\Workspace\\angular-will\\playwright-demo\\tests\\example.spec.ts",
+                    "column": 80,
+                    "line": 58
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-4f0b74d9da1889f2ddaf",
+          "file": "example.spec.ts",
+          "line": 50,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-02-22T00:38:21.617Z",
+    "duration": 45889.993,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}
