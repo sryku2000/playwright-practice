@@ -3,7 +3,7 @@ npx playwright test --project chromium
 $jsonFilePath = "C:\Users\Eason\Documents\Workspace\angular-will\playwright-demo\test-results.json"
 $jsonContent = Get-Content -Raw -Path $jsonFilePath | ConvertFrom-Json
 $token = ""
-$message = "檢查時間: $(Get-Date)"
+$message = "檢查時間: $(Get-Date)，共$($jsonContent.suites[0].specs.Count)個項目"
 $url = "https://notify-api.line.me/api/notify"
 $headers = @{
     "Authorization" = "Bearer $token"
@@ -19,7 +19,6 @@ foreach ($spec in $jsonContent.suites[0].specs) {
         Write-Host "Status: $($spec.tests[0].results[0].status)"
         #使用curl will send message to line notify
         $message = "$($spec.title) 可以訂了，https://bluemagpieresort.rezio.shop/zh-TW/product/Bbookingroom"
-        $url = "https://notify-api.line.me/api/notify"
         $body = @{
             "message" = $message
         }
